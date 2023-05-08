@@ -27,3 +27,17 @@ label[for="search"] {
   margin: 0 0 0 1rem;
   color: rgb(0, 0, 0);
 }
+
+.location {
+  &__name {
+    padding: 2rem 0;
+    padding-left: 1rem;
+    color: var(--primary-color);
+    font-size: var(--font-size-h4);
+  }
+
+  &__btn {
+    margin: 0;
+    margin-left: 1rem;
+  }
+}

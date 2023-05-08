@@ -5,6 +5,6 @@
 </button>
 
 <article *ngFor="let location of results">
-  <p>{{ location.name }}</p>
-  <button (click)="selectHousingLocation(location)">view</button>
+  <p class="location__name">{{ location.name }}</p>
+  <button (click)="selectHousingLocation(location)" class="btn location__btn">view</button>
 </article>
