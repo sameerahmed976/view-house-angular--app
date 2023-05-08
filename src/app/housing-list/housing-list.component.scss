@@ -1,0 +1,29 @@
+label[for="search"] {
+  display: block;
+  padding: 1rem;
+  font-size: var(--font-size-h4);
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--secondary-color);
+}
+.form__control {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.3rem;
+  border-radius: 0.2rem;
+  border: 1px solid grey;
+  font-size: var(--font-size-h5);
+}
+
+.form__control:hover {
+  border-color: var(--secondary-color);
+}
+
+.form__control:focus {
+  outline-color: var(--primary-color);
+}
+
+.form__btn {
+  margin: 0 0 0 1rem;
+  color: rgb(0, 0, 0);
+}

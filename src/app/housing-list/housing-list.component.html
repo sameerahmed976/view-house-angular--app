@@ -1,0 +1,10 @@
+<label for="search">Search a new place</label>
+<input type="text" name="search" id="search" #search class="form__control" autocomplete="off" />
+<button type="submit" class="btn form__btn" (click)="searchHousingLocation(search.value)">
+  search
+</button>
+
+<article *ngFor="let location of results">
+  <p>{{ location.name }}</p>
+  <button (click)="selectHousingLocation(location)">view</button>
+</article>
