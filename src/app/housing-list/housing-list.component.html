@@ -1,8 +1,11 @@
-<label for="search">Search a new place</label>
-<input type="text" name="search" id="search" #search class="form__control" autocomplete="off" />
-<button type="submit" class="btn form__btn" (click)="searchHousingLocation(search.value)">
-  search
-</button>
+<form #searchForm="ngForm" (ngSubmit)="searchHousingLocation(search.value)">
+
+  <label for="search">Search a new place</label>
+  <input type="text" name="search" id="search" #search class="form__control" autocomplete="off" ngModel />
+  <button type="submit" class="btn form__btn"> search
+  </button>
+
+</form>
 
 <article *ngFor="let location of results">
   <p class="location__name">{{ location.name }}</p>

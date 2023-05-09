@@ -13,16 +13,34 @@
 
   <article>
     <ng-container *ngIf="selectedLocation">
-      <img [src]="selectedLocation.photo" class="image" />
-      <p class="name">{{ selectedLocation.name }}</p>
-      <p class="units">{{ selectedLocation.availableUnits }}</p>
-      <p class="city">{{ selectedLocation.city }}, {{ selectedLocation.state }}</p>
-      <p class="laundry">
-        {{
-        selectedLocation.laundry ? 'Has laundry' : 'Does Not have laundry'
-        }}
-      </p>
-      <p class="wifi">{{ selectedLocation.wifi ? 'Has wifi' : 'Does Not have wifi' }}</p>
+
+      <section class="container">
+        <article class="card">
+          <img [src]="selectedLocation.photo" class="image" />
+          <article class="card__body">
+            <p class="name">Name : {{ selectedLocation.name }}</p>
+            <p class="units">units : {{ selectedLocation.availableUnits }}</p>
+            <p class="city">City : {{ selectedLocation.city }}, {{ selectedLocation.state }}</p>
+            <p class="laundry"> Laundry :
+              {{
+              selectedLocation.laundry ? 'Has laundry' : 'Does Not have laundry'
+              }}
+            </p>
+            <p class="wifi"> WiFi : {{ selectedLocation.wifi ? 'Has wifi' : 'Does Not have wifi' }}</p>
+          </article>
+        </article>
+
+
+
+
+
+
+
+
+
+      </section>
+
+
     </ng-container>
   </article>
 </main>
